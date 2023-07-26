@@ -1,0 +1,6 @@
+openai
+requests
+llama-index
+pandas
+jinja2
+streamlit
