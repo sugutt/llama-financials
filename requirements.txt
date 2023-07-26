@@ -4,3 +4,4 @@ llama-index
 pandas
 jinja2
 streamlit
+ib_insync
