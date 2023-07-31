@@ -33,6 +33,7 @@ report_type = st.selectbox(
 
 if report_type == 'Single Stock Outlook':
     symbol = st.text_input("Stock Symbol")
+    st.text("Stocks available:NVDA, META, GOOG, TSM, AAPL")
 
     if symbol:
         with st.spinner(f'Generating report for {symbol}...'):
@@ -43,6 +44,7 @@ if report_type == 'Single Stock Outlook':
 if report_type == 'Competitor Analysis':
     symbol1 = st.text_input("Stock Symbol 1")
     symbol2 = st.text_input("Stock Symbol 2")
+    st.text("Stocks available:NVDA, META, GOOG, TSM, AAPL")
 
     if symbol1 and symbol2:
         with st.spinner(f'Generating report for {symbol1} vs. {symbol2}...'):
