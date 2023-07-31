@@ -1,4 +1,2 @@
-import streamlit as st
-
-st.write("OPENAI_API_KEY:", st.secrets["API_KEY"])
+OPENAI_API_KEY = "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"
 
