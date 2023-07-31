@@ -1,4 +1,13 @@
-import os, config
-from llama_index import VectorStoreIndex, SimpleDirectoryReader
+import config
+import os
+import openai
 
-os.environ['OPENAI_APIKEY'] = config.OPENAI_APIKEY
+from llama_index import GPTVectorStoreIndex, SimpleDirectoryReader
+openai.api_key = config.OPENAI_API_KEY
+os.environ['OPENAI_API_KEY'] = config.OPENAI_API_KEY
+
+documents = SimpleDirectoryReader('articles').load_data()
+
+index = GPTVectorStoreIndex.from_documents(documents)
+
+index.storage_context.persist()

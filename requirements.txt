@@ -3,5 +3,6 @@ requests
 llama-index
 pandas
 jinja2
-streamlit
+streamlit~=1.25.0
 ib_insync
+langchain~=0.0.240
