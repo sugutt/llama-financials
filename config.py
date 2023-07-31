@@ -1,1 +1,3 @@
-OPENAI_API_KEY = "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"
+import streamlit as st
+
+OPENAI_API_KEY = (**st.secrets.API_KEY)
