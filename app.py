@@ -22,7 +22,7 @@ storage_context = StorageContext.from_defaults(persist_dir="./storage")
 index = load_index_from_storage(storage_context)
 query_engine = index.as_query_engine()
 
-st.title('Financial Analyst')
+st.title('GPT-4 Financial Analyst')
 
 st.header("Financial Reports")
 
