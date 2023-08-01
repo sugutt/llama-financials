@@ -11,7 +11,7 @@ os.environ['OPENAI_API_KEY'] = config.OPENAI_API_KEY
 
 
 
-chat = ChatOpenAI(model_name='gpt-3.5-turbo', max_tokens=6000)
+chat = ChatOpenAI(model_name='gpt-4', max_tokens=6000)
 
 llm_predictor = LLMPredictor(chat)
 
